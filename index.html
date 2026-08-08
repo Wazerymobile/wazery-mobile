@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wazery Mobile Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        ?? Wazery Mobile
+    </div>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#products">الموبايلات</a>
+        <a href="#about">عن المتجر</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <h1>كل الموبايلات اللي بتحبها في مكان واحد</h1>
+
+        <p>
+            شوف أحدث الموبايلات وقارن المواصفات والأسعار بسهولة.
+        </p>
+
+        <a href="#products" class="hero-btn">
+            تصفح الموبايلات
+        </a>
+    </div>
+
+</section>
+
+<section class="products-section" id="products">
+
+    <h2>الموبايلات المتاحة</h2>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="?? ابحث عن اسم الموبايل..."
+            onkeyup="searchProducts()"
+        >
+    </div>
+
+    <div id="productsContainer" class="products-container"></div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h2>عن Wazery Mobile</h2>
+
+    <p>
+        متجر متخصص في عرض الموبايلات ومواصفاتها وأسعارها
+        بطريقة سهلة وبسيطة.
+    </p>
+
+</section>
+
+<footer>
+    <p>© 2026 Wazery Mobile - جميع الحقوق محفوظة</p>
+</footer>
+
+<!-- نافذة تفاصيل الموبايل -->
+
+<div id="productModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">×</span>
+
+        <img id="modalImage" src="" alt="Phone">
+
+        <h2 id="modalName"></h2>
+
+        <div class="modal-price" id="modalPrice"></div>
+
+        <div class="specifications">
+
+            <h3>مواصفات الجهاز</h3>
+
+            <div class="spec">
+                <strong>الشاشة:</strong>
+                <span id="modalScreen"></span>
+            </div>
+
+            <div class="spec">
+                <strong>المعالج:</strong>
+                <span id="modalProcessor"></span>
+            </div>
+
+            <div class="spec">
+                <strong>الرام:</strong>
+                <span id="modalRam"></span>
+            </div>
+
+            <div class="spec">
+                <strong>المساحة:</strong>
+                <span id="modalStorage"></span>
+            </div>
+
+            <div class="spec">
+                <strong>الكاميرا الخلفية:</strong>
+                <span id="modalCamera"></span>
+            </div>
+
+            <div class="spec">
+                <strong>الكاميرا الأمامية:</strong>
+                <span id="modalFrontCamera"></span>
+            </div>
+
+            <div class="spec">
+                <strong>البطارية:</strong>
+                <span id="modalBattery"></span>
+            </div>
+
+            <div class="spec">
+                <strong>نظام التشغيل:</strong>
+                <span id="modalOS"></span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
