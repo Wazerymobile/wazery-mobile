@@ -1,13 +1,14 @@
 ﻿const products = [
 
     {
-        name: "Samsung Galaxy A56",
-        price: "18,999 جنيه",
+        name: "Samsung Galaxy A57",
+        price: "29,999 جنيه",
         image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=600&q=80",
 
-        screen: "6.7 بوصة Super AMOLED",
-        processor: "Exynos 1580",
-        ram: "8 GB",
+        screen: " 6.7 بوصة بدقة 1080 x2340 بها ثقب صغير Super AMOLED",
+        processor: " Exynos 1680 تكنولوجيا 4 نانو
+",
+        ram: "12 GB",
         storage: "256 GB",
         camera: "50 MP + 12 MP + 5 MP",
         frontCamera: "12 MP",
@@ -15,24 +16,34 @@
         os: "Android"
     },
 
-    {
-        name: "iPhone 15",
-        price: "29,999 جنيه",
-        image: "https://images.unsplash.com/photo-1591337676887-a217a6970a8a?auto=format&fit=crop&w=600&q=80",
+     
+       {
+    name: "Infinix NOTE 60 Pro",
+    price: "27,500",
+    image: "infinix-note-60-pro.jpg",
 
-        screen: "6.1 بوصة Super Retina XDR",
-        processor: "Apple A16 Bionic",
-        ram: "6 GB",
-        storage: "128 GB",
-        camera: "48 MP + 12 MP",
-        frontCamera: "12 MP",
-        battery: "3349 mAh",
-        os: "iOS"
+    screen: "6.78 بوصة AMOLED، دقة 1.5K، معدل تحديث 144Hz، سطوع يصل إلى 4500 nits، حماية Corning Gorilla Glass 7i",
+
+    processor: "Qualcomm Snapdragon 7s Gen 4 5G",
+
+    ram: " 12 ",
+
+    storage: "256",
+
+    camera: "50MP OIS Night Master + 8MP Ultra-Wide بزاوية 112°",
+
+    frontCamera: "كاميرا أمامية — المواصفة قد تختلف حسب السوق",
+
+    battery: "6500mAh",
+
+    os: "XOS 16",
+
+}
     },
 
     {
-        name: "Infinix Note 50",
-        price: "12,999 جنيه",
+        name: "Infinix Note 60",
+        price: "19,999 جنيه",
         image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80",
 
         screen: "6.78 بوصة AMOLED",
