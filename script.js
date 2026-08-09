@@ -29,6 +29,20 @@ const products = [
         os: "XOS 16"
     },
     {
+        name: "Samsung Galaxy 07",
+        price: " حسب النسخة يختلف السعر",
+        image: "samsung-a07.jpg",
+
+        screen: "6.7 بوصة بدقة 720x1600 بها نوتش",
+        processor: "معالج ثماني النواة Helio G99 تكنولوجيا 6 نانو",
+        ram: "8GB / 6GB /4 حسب الإصدار",
+        storage: "256GB /128 /64",
+        camera: " مزدوجة 50+2 م.ب",
+        frontCamera: "8MP",
+        battery: "5000mAh",
+        os: "Android"
+    },
+    {
         name: "Samsung Galaxy A57 5G",
         price: "30,000 جنيه",
         image: "samsung-a57.jpg",
