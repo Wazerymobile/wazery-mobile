@@ -7,14 +7,27 @@ const products = [
 
         screen: "6.78 بوصة AMOLED، دقة 1.5K، معدل تحديث 144Hz، سطوع يصل إلى 4500 nits، حماية Gorilla Glass 7i",
         processor: "Qualcomm Snapdragon 7s Gen 4 5G",
-        ram: "حسب الإصدار المتوفر",
-        storage: "حسب الإصدار المتوفر",
+        ram: "12",
+        storage: "256",
         camera: "50MP OIS Night Master + 8MP Ultra-Wide بزاوية 112°",
-        frontCamera: "كاميرا أمامية حسب الإصدار والسوق",
+        frontCamera: "20",
         battery: "6500mAh",
         os: "XOS 16"
     },
+    {
+        name: "Infinix NOTE 60 ",
+        price: "20,000 جنيه",
+        image: "infinix-note-60.jpg",
 
+        screen: "6.78 بوصة AMOLED، دقة 1.5K، معدل تحديث 144Hz، سطوع يصل إلى 4500 nits، حماية Gorilla Glass 7i",
+        processor: "D 7,400 5G",
+        ram: "8",
+        storage: "256",
+        camera: "50MP Night Master + 8MP Ultra-Wide  ",
+        frontCamera: "13",
+        battery: "6150mAh",
+        os: "XOS 16"
+    },
     {
         name: "Samsung Galaxy A57 5G",
         price: "30,000 جنيه",
