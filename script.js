@@ -362,29 +362,23 @@ function addToCompare(index) {
 
         return;
     }
-
     // أقصى عدد موبايلين
     if (compareList.length >= 2) {
+        // تفريغ القائمة القديمة
+        compareList = []; 
+    }
 
-    compareList = [];
-
+    // إضافة الموبايل الحالي في كل الأحوال طالما لم يكن موجوداً من قبل
+    compareList.push(index);
     updateCompareButton();
 
-}
-    // لو اختار موبايلين
+    // التحقق من عرض المقارنة أو إظهار رسالة التنبيه
     if (compareList.length === 2) {
-
         showCompare();
-
     } else {
-
-        alert(
-            "تم إضافة " +
-            product.name +
-            " للمقارنة\nاختار موبايل تاني."
-        );
-
+        alert("تم إضافة " + product.name + ".\nاختار موبايل تاني للمقارنة");
     }
+    
 
 }
 
@@ -395,7 +389,7 @@ function addToCompare(index) {
 
 function removeFromCompare(index) {
 
-    compareList = compareList.filter(item => item !== index);
+    compareList = compareList.filter((item, i) => i !== index);
 
     updateCompareButton();
 
