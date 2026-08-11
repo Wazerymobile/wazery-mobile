@@ -674,10 +674,28 @@ function closeCompare() {
     const modal = document.getElementById("compareModal");
 
     if (modal) {
-
         modal.remove();
-
     }
+
+    // مسح الموبايلات المختارة للمقارنة
+    compareList = [];
+
+    // إخفاء زر المقارنة العائم
+    updateCompareButton();
+
+}
+
+function startNewComparison() {
+
+    compareList = [];
+
+    const modal = document.getElementById("compareModal");
+
+    if (modal) {
+        modal.remove();
+    }
+
+    updateCompareButton();
 
 }
 
