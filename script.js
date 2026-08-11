@@ -101,6 +101,21 @@ const products = [
         battery: "5520mAh",
         os: "Xiaomi HyperOS 2"
     },
+    
+        {
+        name: "Oppo Reno 16",
+        price: " 25000",
+        image: "oppo-reno16.purpel.jpg",
+
+        screen: "6.78 بوصة بدقة 720x1576 بها ثقب",
+        processor: " Qualcomm Snapdragon 7 Gen 4 ثماني النواة 4 نانو ",
+        ram: "12GB",
+        storage: "256GB ",
+        camera: " (Ultra-wide): 50 MP +(Wide): 50 MP + (Telephoto): 50 MP ",
+        frontCamera: "50 MP",
+        battery: "6700mAh",
+        os: "Android"
+    },
 
     {
         name: "Samsung Galaxy S26 Ultra",
