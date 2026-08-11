@@ -74,7 +74,7 @@ const products = [
     {
         name: "Redmi Note 15 5G",
         price: "15,000 جنيه",
-        image: "redmi-note-15-5g.jpg",
+        image: "Note-15.jpg",
 
         screen: "6.77 بوصة AMOLED، دقة 2392×1080، معدل تحديث 120Hz، سطوع يصل إلى 3200 nits",
         processor: "Qualcomm Snapdragon 6 Gen 3، تصنيع 4nm، ثماني النواة حتى 2.4GHz",
