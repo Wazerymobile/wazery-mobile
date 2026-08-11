@@ -366,15 +366,11 @@ function addToCompare(index) {
     // أقصى عدد موبايلين
     if (compareList.length >= 2) {
 
-        alert("تقدر تقارن بين موبايلين فقط");
-
-        return;
-    }
-
-    compareList.push(index);
+    compareList = [];
 
     updateCompareButton();
 
+}
     // لو اختار موبايلين
     if (compareList.length === 2) {
 
