@@ -102,9 +102,9 @@ const products = [
         os: "Xiaomi HyperOS 2"
     },
     
-        {
+   {
         name: "Oppo Reno 16",
-        price: " 25000",
+        price: " 40000",
         image: "oppo-reno16.purpel.jpg",
 
         screen: "6.78 بوصة بدقة 720x1576 بها ثقب",
