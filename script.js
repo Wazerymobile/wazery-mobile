@@ -33,6 +33,7 @@ const products = [
         name: "Infinix Hot 70",
         price: " حسب النسخة يختلف السعر",
         image: "Hot70.jpg",
+         image: "Infinix-Hot-70-Colors.jpg",
 
         screen: "6.78 بوصة بدقة 720x1576 بها ثقب",
         processor: " ثماني النواة Helio G100 ULT تكنولوجيا 6 نانو",
