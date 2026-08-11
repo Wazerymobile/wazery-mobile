@@ -59,7 +59,7 @@ const products = [
     {
         name: " Redmi A7",
         price: "6,200 جنيه",
-        image: "Redmi A7.jpg",
+        image: "Redmi-A7.jpg",
 
         screen: "6.88 بوصة بدقة 720x1640 بكسل بها نوتش",
         processor: "Unisoc T7250 تكنولوجيا 12 نانو",
