@@ -110,7 +110,6 @@ const products = [
 
 const container = document.getElementById("productsContainer");
 
-
 function displayProducts(list) {
 
     if (!container) {
@@ -136,7 +135,6 @@ function displayProducts(list) {
         return;
     }
 
-
     list.forEach((product) => {
 
         const index = products.indexOf(product);
@@ -144,7 +142,6 @@ function displayProducts(list) {
         const card = document.createElement("div");
 
         card.className = "product-card";
-
 
         card.innerHTML = `
 
@@ -169,10 +166,16 @@ function displayProducts(list) {
                     عرض المواصفات
                 </button>
 
+                <button
+                    class="compare-btn"
+                    onclick="addToCompare(${index})"
+                >
+                    ⚖️ قارن
+                </button>
+
             </div>
 
         `;
-
 
         container.appendChild(card);
 
@@ -333,3 +336,742 @@ function searchProducts() {
 }
 
 displayProducts(products);
+// ==================================================
+// نظام مقارنة الموبايلات
+// ==================================================
+
+let compareList = [];
+
+
+// --------------------------------------------------
+// إضافة موبايل للمقارنة
+// --------------------------------------------------
+
+function addToCompare(index) {
+
+    const product = products[index];
+
+    if (!product) {
+        return;
+    }
+
+    // لو الموبايل موجود بالفعل
+    if (compareList.includes(index)) {
+
+        alert("الموبايل ده موجود بالفعل في المقارنة");
+
+        return;
+    }
+
+    // أقصى عدد موبايلين
+    if (compareList.length >= 2) {
+
+        alert("تقدر تقارن بين موبايلين فقط");
+
+        return;
+    }
+
+    compareList.push(index);
+
+    updateCompareButton();
+
+    // لو اختار موبايلين
+    if (compareList.length === 2) {
+
+        showCompare();
+
+    } else {
+
+        alert(
+            "تم إضافة " +
+            product.name +
+            " للمقارنة\nاختار موبايل تاني."
+        );
+
+    }
+
+}
+
+
+// --------------------------------------------------
+// حذف موبايل من المقارنة
+// --------------------------------------------------
+
+function removeFromCompare(index) {
+
+    compareList = compareList.filter(item => item !== index);
+
+    updateCompareButton();
+
+    if (compareList.length < 2) {
+
+        const modal = document.getElementById("compareModal");
+
+        if (modal) {
+            modal.remove();
+        }
+
+    } else {
+
+        showCompare();
+
+    }
+
+}
+
+
+// --------------------------------------------------
+// زر المقارنة
+// --------------------------------------------------
+
+function updateCompareButton() {
+
+    let button = document.getElementById("floatingCompareButton");
+
+    if (!button) {
+
+        button = document.createElement("button");
+
+        button.id = "floatingCompareButton";
+
+        document.body.appendChild(button);
+
+    }
+
+    if (compareList.length === 0) {
+
+        button.style.display = "none";
+
+        return;
+
+    }
+
+    button.style.display = "block";
+
+    button.innerHTML =
+        "⚖️ مقارنة (" +
+        compareList.length +
+        "/2)";
+
+}
+
+
+// --------------------------------------------------
+// عرض المقارنة
+// --------------------------------------------------
+
+function showCompare() {
+
+    if (compareList.length !== 2) {
+
+        return;
+
+    }
+
+    const phone1 = products[compareList[0]];
+    const phone2 = products[compareList[1]];
+
+    if (!phone1 || !phone2) {
+
+        return;
+
+    }
+
+    // حذف نافذة قديمة
+    const oldModal = document.getElementById("compareModal");
+
+    if (oldModal) {
+
+        oldModal.remove();
+
+    }
+
+
+    const modal = document.createElement("div");
+
+    modal.id = "compareModal";
+
+    modal.innerHTML = `
+
+        <div class="compare-overlay">
+
+            <div class="compare-box">
+
+                <button
+                    class="compare-close"
+                    onclick="closeCompare()"
+                >
+                    ×
+                </button>
+
+                <h2>
+                    ⚖️ مقارنة الموبايلات
+                </h2>
+
+                <div class="compare-products">
+
+                    <div class="compare-phone">
+
+                        <img
+                            src="${phone1.image}"
+                            alt="${phone1.name}"
+                        >
+
+                        <h3>
+                            ${phone1.name}
+                        </h3>
+
+                        <div class="compare-price">
+                            ${phone1.price}
+                        </div>
+
+                        <button
+                            class="remove-compare"
+                            onclick="removeFromCompare(${compareList[0]})"
+                        >
+                            إزالة
+                        </button>
+
+                    </div>
+
+
+                    <div class="compare-vs">
+                        VS
+                    </div>
+
+
+                    <div class="compare-phone">
+
+                        <img
+                            src="${phone2.image}"
+                            alt="${phone2.name}"
+                        >
+
+                        <h3>
+                            ${phone2.name}
+                        </h3>
+
+                        <div class="compare-price">
+                            ${phone2.price}
+                        </div>
+
+                        <button
+                            class="remove-compare"
+                            onclick="removeFromCompare(${compareList[1]})"
+                        >
+                            إزالة
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="comparison-table">
+
+                    ${createComparisonRow(
+                        "💰 السعر",
+                        phone1.price,
+                        phone2.price
+                    )}
+
+                    ${createComparisonRow(
+                        "📱 الشاشة",
+                        phone1.screen,
+                        phone2.screen
+                    )}
+
+                    ${createComparisonRow(
+                        "⚡ المعالج",
+                        phone1.processor,
+                        phone2.processor
+                    )}
+
+                    ${createComparisonRow(
+                        "🧠 الرام",
+                        phone1.ram + " GB",
+                        phone2.ram + " GB"
+                    )}
+
+                    ${createComparisonRow(
+                        "💾 التخزين",
+                        phone1.storage + " GB",
+                        phone2.storage + " GB"
+                    )}
+
+                    ${createComparisonRow(
+                        "📷 الكاميرا الخلفية",
+                        phone1.camera,
+                        phone2.camera
+                    )}
+
+                    ${createComparisonRow(
+                        "🤳 الكاميرا الأمامية",
+                        phone1.frontCamera + " MP",
+                        phone2.frontCamera + " MP"
+                    )}
+
+                    ${createComparisonRow(
+                        "🔋 البطارية",
+                        phone1.battery,
+                        phone2.battery
+                    )}
+
+                    ${createComparisonRow(
+                        "🤖 نظام التشغيل",
+                        phone1.os,
+                        phone2.os
+                    )}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    `;
+
+    document.body.appendChild(modal);
+
+}
+
+
+// --------------------------------------------------
+// إنشاء صف من جدول المقارنة
+// --------------------------------------------------
+
+function createComparisonRow(title, value1, value2) {
+
+    return `
+
+        <div class="comparison-row">
+
+            <div class="comparison-title">
+                ${title}
+            </div>
+
+            <div class="comparison-value">
+                ${value1 || "-"}
+            </div>
+
+            <div class="comparison-value">
+                ${value2 || "-"}
+            </div>
+
+        </div>
+
+    `;
+
+}
+
+
+// --------------------------------------------------
+// إغلاق المقارنة
+// --------------------------------------------------
+
+function closeCompare() {
+
+    const modal = document.getElementById("compareModal");
+
+    if (modal) {
+
+        modal.remove();
+
+    }
+
+}
+
+
+// --------------------------------------------------
+// زر المقارنة العائم
+// --------------------------------------------------
+
+document.addEventListener("click", function(event) {
+
+    if (event.target.id === "floatingCompareButton") {
+
+        if (compareList.length === 2) {
+
+            showCompare();
+
+        }
+
+    }
+
+});
+
+
+// ==================================================
+// CSS الخاص بالمقارنة
+// ==================================================
+
+const compareStyle = document.createElement("style");
+
+compareStyle.textContent = `
+
+    .compare-btn {
+
+        width: 100%;
+
+        margin-top: 10px;
+
+        padding: 10px;
+
+        border: none;
+
+        border-radius: 8px;
+
+        background: #222;
+
+        color: white;
+
+        font-size: 15px;
+
+        cursor: pointer;
+
+        transition: 0.2s;
+
+    }
+
+
+    .compare-btn:hover {
+
+        transform: translateY(-2px);
+
+        opacity: 0.9;
+
+    }
+
+
+    #floatingCompareButton {
+
+        position: fixed;
+
+        bottom: 20px;
+
+        right: 20px;
+
+        z-index: 9998;
+
+        border: none;
+
+        border-radius: 50px;
+
+        padding: 15px 22px;
+
+        background: #111;
+
+        color: white;
+
+        font-size: 16px;
+
+        font-weight: bold;
+
+        cursor: pointer;
+
+        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+
+        display: none;
+
+    }
+
+
+    .compare-overlay {
+
+        position: fixed;
+
+        inset: 0;
+
+        background: rgba(0,0,0,0.75);
+
+        z-index: 9999;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        padding: 15px;
+
+        overflow-y: auto;
+
+    }
+
+
+    .compare-box {
+
+        position: relative;
+
+        width: 100%;
+
+        max-width: 1000px;
+
+        max-height: 90vh;
+
+        overflow-y: auto;
+
+        background: white;
+
+        border-radius: 18px;
+
+        padding: 25px;
+
+        box-sizing: border-box;
+
+    }
+
+
+    .compare-box h2 {
+
+        text-align: center;
+
+        margin-top: 5px;
+
+        margin-bottom: 25px;
+
+    }
+
+
+    .compare-close {
+
+        position: absolute;
+
+        top: 10px;
+
+        right: 15px;
+
+        width: 40px;
+
+        height: 40px;
+
+        border: none;
+
+        border-radius: 50%;
+
+        background: #eee;
+
+        font-size: 28px;
+
+        cursor: pointer;
+
+    }
+
+
+    .compare-products {
+
+        display: grid;
+
+        grid-template-columns: 1fr 80px 1fr;
+
+        align-items: center;
+
+        gap: 15px;
+
+        margin-bottom: 25px;
+
+    }
+
+
+    .compare-phone {
+
+        text-align: center;
+
+        padding: 15px;
+
+        border-radius: 15px;
+
+        background: #f5f5f5;
+
+    }
+
+
+    .compare-phone img {
+
+        width: 150px;
+
+        height: 180px;
+
+        object-fit: contain;
+
+        max-width: 100%;
+
+    }
+
+
+    .compare-phone h3 {
+
+        margin: 10px 0;
+
+    }
+
+
+    .compare-price {
+
+        font-weight: bold;
+
+        font-size: 18px;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .compare-vs {
+
+        text-align: center;
+
+        font-size: 22px;
+
+        font-weight: bold;
+
+    }
+
+
+    .remove-compare {
+
+        border: none;
+
+        background: #d33;
+
+        color: white;
+
+        padding: 8px 15px;
+
+        border-radius: 7px;
+
+        cursor: pointer;
+
+    }
+
+
+    .comparison-table {
+
+        width: 100%;
+
+        border-radius: 12px;
+
+        overflow: hidden;
+
+    }
+
+
+    .comparison-row {
+
+        display: grid;
+
+        grid-template-columns: 180px 1fr 1fr;
+
+        border-bottom: 1px solid #ddd;
+
+    }
+
+
+    .comparison-title {
+
+        font-weight: bold;
+
+        padding: 15px;
+
+        background: #f1f1f1;
+
+    }
+
+
+    .comparison-value {
+
+        padding: 15px;
+
+        line-height: 1.6;
+
+        border-right: 1px solid #ddd;
+
+    }
+
+
+    @media (max-width: 700px) {
+
+        .compare-box {
+
+            padding: 15px;
+
+        }
+
+
+        .compare-products {
+
+            grid-template-columns: 1fr 45px 1fr;
+
+            gap: 5px;
+
+        }
+
+
+        .compare-phone {
+
+            padding: 8px;
+
+        }
+
+
+        .compare-phone img {
+
+            width: 100px;
+
+            height: 130px;
+
+        }
+
+
+        .compare-phone h3 {
+
+            font-size: 14px;
+
+        }
+
+
+        .compare-vs {
+
+            font-size: 16px;
+
+        }
+
+
+        .comparison-row {
+
+            grid-template-columns: 100px 1fr 1fr;
+
+        }
+
+
+        .comparison-title,
+        .comparison-value {
+
+            padding: 9px;
+
+            font-size: 12px;
+
+        }
+
+
+        #floatingCompareButton {
+
+            bottom: 15px;
+
+            right: 15px;
+
+            padding: 12px 17px;
+
+            font-size: 14px;
+
+        }
+
+    }
+
+`;
+
+document.head.appendChild(compareStyle);
+
+
+// تشغيل زر المقارنة
+updateCompareButton();
