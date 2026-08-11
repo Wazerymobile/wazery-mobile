@@ -56,6 +56,20 @@ const products = [
         battery: "5000mAh",
         os: "Android"
     },
+    {
+        name: " Redmi A7",
+        price: "6,200 جنيه",
+        image: "Redmi A7.jpg",
+
+        screen: "6.88 بوصة بدقة 720x1640 بكسل بها نوتش",
+        processor: "Unisoc T7250 تكنولوجيا 12 نانو",
+        ram: "3GB ",
+        storage: "64GB",
+        camera: "13 MP",
+        frontCamera: "8MP",
+        battery: "5200mAh",
+        os: "Android"
+    },
 
     {
         name: "Redmi Note 15 5G",
