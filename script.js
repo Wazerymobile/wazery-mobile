@@ -14,6 +14,7 @@ const products = [
         battery: "6500mAh",
         os: "XOS 16"
     },
+    
     {
         name: "Infinix NOTE 60 ",
         price: "20,000 جنيه",
@@ -27,6 +28,20 @@ const products = [
         frontCamera: "13",
         battery: "6150mAh",
         os: "XOS 16"
+    },
+        {
+        name: "Infinix Hot 70",
+        price: " حسب النسخة يختلف السعر",
+        image: "Hot70.jpg",
+
+        screen: "6.78 بوصة بدقة 720x1576 بها ثقب",
+        processor: " ثماني النواة Helio G100 ULT تكنولوجيا 6 نانو",
+        ram: "8GB / 6GB /4 حسب الإصدار",
+        storage: "256GB /128 ",
+        camera: " مزدوجة 50+2 م.ب",
+        frontCamera: "8MP",
+        battery: "5600mAh",
+        os: "Android"
     },
     {
         name: "Samsung Galaxy 07",
