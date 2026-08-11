@@ -89,7 +89,7 @@ const products = [
     {
         name: "Samsung Galaxy S26 Ultra",
         price: "75,000 جنيه",
-        image: "samsung-s26-ultra.jpg",
+        image: "26Ultra.jpg",
 
         screen: "6.9 بوصة Dynamic AMOLED 2X، شاشة عالية الدقة ومعدل تحديث متكيف",
         processor: "معالج Snapdragon مخصص لسلسلة Galaxy حسب السوق",
