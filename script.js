@@ -61,7 +61,7 @@ const products = [
     {
         name: "Samsung Galaxy A57 5G",
         price: "30,000 جنيه",
-        image: "samsung-a57.jpg",
+        image: "A57.jpg",
 
         screen: "6.7 بوصة Super AMOLED Plus، دقة FHD+، معدل تحديث 120Hz",
         processor: "معالج ثماني النواة حتى 2.9GHz",
