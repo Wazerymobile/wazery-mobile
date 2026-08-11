@@ -3,7 +3,7 @@ const products = [
     {
         name: "Infinix NOTE 60 Pro",
         price: "27,000 جنيه",
-        image: "infinix-note-60-pro.jpg",
+        image: "Note-60-Pro.jpg",
 
         screen: "6.78 بوصة AMOLED، دقة 1.5K، معدل تحديث 144Hz، سطوع يصل إلى 4500 nits، حماية Gorilla Glass 7i",
         processor: "Qualcomm Snapdragon 7s Gen 4 5G",
@@ -17,7 +17,7 @@ const products = [
     {
         name: "Infinix NOTE 60 ",
         price: "20,000 جنيه",
-        image: "infinix-note-60.jpg",
+        image: "Note-60.jpg",
 
         screen: "6.78 بوصة AMOLED، دقة 1.5K، معدل تحديث 144Hz، سطوع يصل إلى 4500 nits، حماية Gorilla Glass 7i",
         processor: "D 7,400 5G",
@@ -31,7 +31,7 @@ const products = [
     {
         name: "Samsung Galaxy 07",
         price: " حسب النسخة يختلف السعر",
-        image: "samsung-a07.jpg",
+        image: "A07.jpg",
 
         screen: "6.7 بوصة بدقة 720x1600 بها نوتش",
         processor: "معالج ثماني النواة Helio G99 تكنولوجيا 6 نانو",
