@@ -38,12 +38,13 @@ const products = [
         screen: "6.78 بوصة بدقة 720x1576 بها ثقب",
         processor: " ثماني النواة Helio G100 ULT تكنولوجيا 6 نانو",
         ram: "8GB / 6GB /4 حسب الإصدار",
-        storage: "256GB /128 ",
+        storage: "256 GB /128 GB ",
         camera: " مزدوجة 50+2 م.ب",
         frontCamera: "8MP",
         battery: "5600mAh",
         os: "Android"
     },
+    
     {
         name: "Samsung Galaxy 07",
         price: " حسب النسخة يختلف السعر",
@@ -113,6 +114,20 @@ const products = [
         storage: "256GB ",
         camera: " (Ultra-wide): 50 MP +(Wide): 50 MP + (Telephoto): 50 MP ",
         frontCamera: "50 MP",
+        battery: "6700mAh",
+        os: "Android"
+    },
+    
+    {
+        name: "Oppo Reno 16 Pro",
+        price: " 58000 L.E",
+        image: "oppo_reno_16.png",
+        screen: "6.32 بوصة بدقة 1216x2640 بكسل بها ثقب",
+        processor: "ثماني النواة Dimn 8550 Super تكنولوجيا 4 نانو",
+        ram: "12 GB",
+        storage: "512 GB ",
+        camera: " خلفية ثلاثية  MB 200+50MB+50MB",
+        frontCamera: "50MP",
         battery: "6700mAh",
         os: "Android"
     },
