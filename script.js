@@ -147,6 +147,62 @@ const products = [
         os: "Android"
     }
 
+    },
+    {
+        name: "Honor 600",
+        price: "24,000 جنيه",
+        image: "honor-600.jpg",
+
+        screen: "6.7 بوصة OLED، دقة 1.5K، معدل تحديث 120Hz، سطوع يصل إلى 5000 nits، تعتيم PWM 3840Hz",
+        processor: "Qualcomm Snapdragon 7 Gen 4 (4nm)",
+        ram: "12GB / 16GB",
+        storage: "256GB / 512GB",
+        camera: "200MP OIS رئيسية + 12MP Ultra-Wide",
+        frontCamera: "50MP",
+        battery: "6500mAh (سيليكون كربون) - شحن سريع 80W",
+        os: "MagicOS 10 (Android 16)"
+    },
+    {
+        name: "Honor 600 Pro",
+        price: "36,000 جنيه",
+        image: "honor-600-pro.jpg",
+
+        screen: "6.78 بوصة AMOLED، دقة 1.5K، معدل تحديث 120Hz، سطوع استثنائي 8000 nits، حماية للعين",
+        processor: "Qualcomm Snapdragon 8 Elite (3nm)",
+        ram: "12GB / 16GB",
+        storage: "256GB / 512GB / 1TB",
+        camera: "200MP OIS + 50MP Telephoto (3.5x Zoom) + 12MP Ultra-Wide",
+        frontCamera: "50MP",
+        battery: "7000mAh - شحن سلكي 80W + لاسلكي 50W (IP68/IP69K)",
+        os: "MagicOS 10 (Android 16)"
+    },
+    {
+        name: "Vivo V60 Pro",
+        price: "29,500 جنيه",
+        image: "vivo-v60-pro.jpg",
+
+        screen: "6.78 بوصة AMOLED منحنية، دقة 1.5K، 120Hz، سطوع 4500 nits",
+        processor: "MediaTek Dimensity 8350 (4nm)",
+        ram: "12GB",
+        storage: "256GB / 512GB",
+        camera: "50MP ZEISS OIS + 50MP Telephoto (3x Zoom) + 50MP Ultra-Wide",
+        frontCamera: "50MP ZEISS AF",
+        battery: "6000mAh - شحن سريع 90W",
+        os: "Funtouch OS 16 (Android 16)"
+    },
+    {
+        name: "Tecno Camon 40 Pro 5G",
+        price: "18,500 جنيه",
+        image: "tecno-camon-40-pro.jpg",
+
+        screen: "6.78 بوصة AMOLED، دقة FHD+، معدل تحديث 144Hz",
+        processor: "MediaTek Dimensity 7300 5G",
+        ram: "8GB / 12GB",
+        storage: "256GB",
+        camera: "50MP Sony IMX890 OIS + 50MP Ultra-Wide",
+        frontCamera: "50MP مع فلاش مزدوج",
+        battery: "5500mAh - شحن سريع 70W",
+        os: "HiOS 16"
 ];
 
 
