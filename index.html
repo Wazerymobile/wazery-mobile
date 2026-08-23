@@ -77,62 +77,13 @@
         <div class="search-box">
             <i class="fas fa-search search-icon"></i>
             <input type="text" id="searchInput" placeholder="ابحث عن موبايل (مثلاً: Infinix, Samsung, Vivo...)" onkeyup="searchProducts()">
-        </div>
-
-        <div class="products-container" id="productsGrid">
-            <!-- Sample Product 1 -->
-            <div class="product-card">
-                <span class="card-badge">الأكثر مبيعاً</span>
-                <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80" alt="Infinix Note 40">
-                <div class="product-info">
-                    <h3>Infinix Note 40 Pro</h3>
-                    <div class="price">11,500 ج.م</div>
-                    <div class="card-actions">
-                        <button class="details-btn" onclick="openModal('Infinix Note 40 Pro', '11,500 ج.م', 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80', 'AMOLED 6.78 بوصة 120Hz', 'Helio G99 Ultimate', '12 GB', '256 GB', '108 ميجابكسل', '32 ميجابكسل', '5000 مللي أمبير (شحن 70 واط)', 'Android 14')">
-                            <i class="fas fa-eye"></i> التفاصيل
-                        </button>
-                        <a href="https://wa.me/201003211801?text=السلام%20عليهم%D8%8C%20أرغب%20في%20الاستفسار%20عن%20موبايل%20Infinix%20Note%2040%20Pro" target="_blank" class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> طلب
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sample Product 2 -->
-            <div class="product-card">
-                <span class="card-badge new">جديد</span>
-                <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80" alt="Samsung Galaxy A55">
-                <div class="product-info">
-                    <h3>Samsung Galaxy A55 5G</h3>
-                    <div class="price">18,200 ج.م</div>
-                    <div class="card-actions">
-                        <button class="details-btn" onclick="openModal('Samsung Galaxy A55 5G', '18,200 ج.م', 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80', 'Super AMOLED 6.6 بوصة 120Hz', 'Exynos 1480', '8 GB', '256 GB', '50 + 12 + 5 ميجابكسل', '32 ميجابكسل', '5000 مللي أمبير (شحن 25 واط)', 'Android 14')">
-                            <i class="fas fa-eye"></i> التفاصيل
-                        </button>
-                        <a href="https://wa.me/201003211801?text=السلام%20عليهم%D8%8C%20أرغب%20في%20الاستفسار%20عن%20موبايل%20Samsung%20Galaxy%20A55" target="_blank" class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> طلب
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sample Product 3 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Xiaomi Redmi Note 13">
-                <div class="product-info">
-                    <h3>Redmi Note 13 Pro</h3>
-                    <div class="price">13,800 ج.م</div>
-                    <div class="card-actions">
-                        <button class="details-btn" onclick="openModal('Redmi Note 13 Pro', '13,800 ج.م', 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', 'AMOLED 6.67 بوصة 120Hz', 'Snapdragon 7s Gen 2', '8 GB', '256 GB', '200 ميجابكسل', '16 ميجابكسل', '5100 مللي أمبير (شحن 67 واط)', 'Android 13')">
-                            <i class="fas fa-eye"></i> التفاصيل
-                        </button>
-                        <a href="https://wa.me/201003211801?text=السلام%20عليهم%D8%8C%20أرغب%20في%20الاستفسار%20عن%20موبايل%20Redmi%20Note%2013%20Pro" target="_blank" class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> طلب
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>     
+        <!-- حاوية المنتجات الفارغة التي سيتم ملؤها عبر الجافا سكريبت -->
+<div id="products-container" class="products-grid">
+    <!-- المنتجات ستظهر هنا تلقائيًا -->
+</div>
+        
+        
     </section>
 
     <!-- About Section -->
