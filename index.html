@@ -78,12 +78,9 @@
             <i class="fas fa-search search-icon"></i>
             <input type="text" id="searchInput" placeholder="ابحث عن موبايل (مثلاً: Infinix, Samsung, Vivo...)" onkeyup="searchProducts()">
         </div>     
-        <!-- حاوية المنتجات الفارغة التي سيتم ملؤها عبر الجافا سكريبت -->
-<div id="products-container" class="products-grid">
-    <!-- المنتجات ستظهر هنا تلقائيًا -->
-</div>
-        
-        
+
+        <!-- حاوية المنتجات الفارغة التي سيتم ملؤها تلقائياً عبر ملف script.js -->
+        <div id="products-container" class="products-grid"></div>
     </section>
 
     <!-- About Section -->
@@ -132,53 +129,7 @@
         </div>
     </div>
 
-    <!-- JavaScript Script -->
-    <script>
-        function openModal(title, price, img, screen, cpu, ram, storage, mainCam, selfieCam, battery, os) {
-            document.getElementById('modalTitle').innerText = title;
-            document.getElementById('modalPrice').innerText = price;
-            document.getElementById('modalImg').src = img;
-            document.getElementById('specScreen').innerText = screen;
-            document.getElementById('specCpu').innerText = cpu;
-            document.getElementById('specRam').innerText = ram;
-            document.getElementById('specStorage').innerText = storage;
-            document.getElementById('specMainCam').innerText = mainCam;
-            document.getElementById('specSelfieCam').innerText = selfieCam;
-            document.getElementById('specBattery').innerText = battery;
-            document.getElementById('specOs').innerText = os;
-
-            const waText = encodeURIComponent(`السلام عليكم، أرغب في طلب موبايل ${title} بسعر ${price}`);
-            document.getElementById('modalWaBtn').href = `https://wa.me/201003211801?text=${waText}`;
-
-            document.getElementById('productModal').style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            document.getElementById('productModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        window.onclick = function(event) {
-            const modal = document.getElementById('productModal');
-            if (event.target == modal) {
-                closeModal();
-            }
-        }
-
-        function searchProducts() {
-            let input = document.getElementById('searchInput').value.toLowerCase();
-            let cards = document.getElementsByClassName('product-card');
-
-            for (let i = 0; i < cards.length; i++) {
-                let title = cards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
-                if (title.includes(input)) {
-                    cards[i].style.display = "block";
-                } else {
-                    cards[i].style.display = "none";
-                }
-            }
-        }
-    </script>
+    <!-- ربط ملف الـ JavaScript الخاص بالمنتجات -->
+    <script src="script.js"></script>
 </body>
 </html>
