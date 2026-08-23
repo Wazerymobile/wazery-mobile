@@ -158,6 +158,98 @@ const products = [
         battery: "7000mAh - شحن سلكي 80W + لاسلكي 50W (IP68/IP69K)",
         os: "MagicOS 10 (Android 16)"
     },
+        {
+        name: "Infinix Note Edge",
+        price: "18,500 جنيه",
+        image: "Note-Edge.jpg",
+        screen: "6.78 بوصة AMOLED منحنية (3D Curved)، دقة FHD+، معدل تحديث 120Hz، سطوع يصل إلى 1300 nits",
+        processor: "MediaTek Dimensity 7020 (6nm)",
+        ram: "8GB / 12GB",
+        storage: "256 GB",
+        camera: "108MP OIS رئيسية + 2MP عمق + عدسة AI",
+        frontCamera: "32 MP",
+        battery: "5000mAh - شحن سريع 45W",
+        os: "XOS 14 (Android 14)"
+    },
+    {
+        name: "Infinix GT 50 Pro",
+        price: "34,500 جنيه",
+        image: "GT-50-Pro.jpg",
+        screen: "6.78 بوصة AMOLED مخصصة للألعاب، دقة 1.5K، معدل تحديث 144Hz، إضاءة RGB خلفية",
+        processor: "MediaTek Dimensity 8300 Ultra (4nm)",
+        ram: "12 GB",
+        storage: "256GB / 512GB",
+        camera: "108MP OIS رئيسية + 8MP Ultra-Wide + 2MP Macro",
+        frontCamera: "32 MP",
+        battery: "5500mAh - شحن سريع 90W",
+        os: "XOS for GT (Android 15)"
+    },
+    {
+        name: "Vivo V70 5G",
+        price: "26,000 جنيه",
+        image: "Vivo-V70-5G.jpg",
+        screen: "6.78 بوصة AMOLED منحنية، دقة 1.5K، 120Hz، دعم 1 Billion Colors، سطوع 4500 nits",
+        processor: "MediaTek Dimensity 8300 (4nm)",
+        ram: "12 GB",
+        storage: "256GB / 512GB",
+        camera: "50MP ZEISS OIS رئيسية + 50MP Telephoto + 8MP Ultra-Wide",
+        frontCamera: "50 MP ZEISS مع ضبط تلقائي للفوكس",
+        battery: "5500mAh - شحن سريع 80W",
+        os: "Funtouch OS 15 (Android 15)"
+    },
+    {
+        name: "Vivo V70 F",
+        price: "19,500 جنيه",
+        image: "Vivo-V70F.jpg",
+        screen: "6.67 بوصة AMOLED مسطحة، دقة FHD+، معدل تحديث 120Hz، سطوع 1800 nits",
+        processor: "Qualcomm Snapdragon 685 / 6 Gen 1",
+        ram: "8 GB",
+        storage: "256 GB",
+        camera: "50MP رئيسية بفتحة واسعة + 2MP عزل",
+        frontCamera: "16 MP",
+        battery: "5000mAh - شحن سريع 44W",
+        os: "Funtouch OS 14 (Android 14)"
+    },
+    {
+        name: "Samsung Galaxy A17",
+        price: "8,500 جنيه",
+        image: "Samsung-A17.jpg",
+        screen: "6.6 بوصة Super AMOLED، دقة FHD+، معدل تحديث 90Hz",
+        processor: "Exynos 1330 / MediaTek Helio G99",
+        ram: "4GB / 6GB",
+        storage: "128 GB",
+        camera: "50MP رئيسية (OIS) + 5MP Ultra-Wide + 2MP Macro",
+        frontCamera: "13 MP",
+        battery: "5000mAh - شحن 25W",
+        os: "One UI 7 (Android 15)"
+    },
+    {
+        name: "Samsung Galaxy A27",
+        price: "15,500 جنيه",
+        image: "Samsung-A27.jpg",
+        screen: "6.6 بوصة Super AMOLED، دقة FHD+، معدل تحديث 120Hz، حماية Gorilla Glass Victus",
+        processor: "Exynos 1380 / Dimensity 6300",
+        ram: "6GB / 8GB",
+        storage: "128GB / 256GB",
+        camera: "50MP OIS رئيسية + 8MP Ultra-Wide + 2MP Macro",
+        frontCamera: "13 MP",
+        battery: "5000mAh - شحن 25W (مقاومة ماء IP67)",
+        os: "One UI 7 (Android 15)"
+    },
+    {
+        name: "Redmi Note 15 Pro Plus",
+        price: "28,000 جنيه",
+        image: "Redmi-Note-15-Pro-Plus.jpg",
+        screen: "6.67 بوصة OLED منحنية، دقة 1.5K، 120Hz، سطوع 3000 nits، حماية Gorilla Glass Victus 2",
+        processor: "Qualcomm Snapdragon 7s Gen 3 (4nm)",
+        ram: "12GB / 16GB",
+        storage: "256GB / 512GB",
+        camera: "200MP OIS رئيسية + 8MP Ultra-Wide + 2MP Macro",
+        frontCamera: "32 MP",
+        battery: "5100mAh - شحن خارق 120W",
+        os: "Xiaomi HyperOS 2"
+    }
+    
     {
         name: "Vivo V60 Pro",
         price: "29,500 جنيه",
