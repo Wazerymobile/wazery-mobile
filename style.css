@@ -623,3 +623,174 @@ footer strong {
         gap: 4px;
     }
 }
+/* ==================================================
+   تنسيقات نافذة وجدول المقارنة (Responsive Compare)
+   ================================================== */
+
+/* زر المقارنة العائم */
+#floatingCompareButton {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#floatingCompareButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* النافذة المنبثقة للمقارنة */
+#compareModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* صندوق المحتوى داخل النافذة */
+#compareModal > div {
+    background: #ffffff;
+    width: 100%;
+    max-width: 750px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 16px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* زر إغلاق المقارنة */
+#compareModal button[onclick="closeCompare()"] {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 28px;
+    border: none;
+    background: transparent;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.2s;
+    line-height: 1;
+}
+
+#compareModal button[onclick="closeCompare()"]:hover {
+    color: #e74c3c;
+}
+
+/* جدول المقارنة */
+#compareModal table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+#compareModal th {
+    background: #1e3c72;
+    color: #ffffff;
+    padding: 12px 8px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+#compareModal td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.88rem;
+    color: #333;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* تمييز العمود الأول (عناوين المواصفات) */
+#compareModal td:first-child {
+    font-weight: bold;
+    background-color: #f8f9fa;
+    color: #1e3c72;
+    width: 25%;
+}
+
+#compareModal tr:nth-child(even) td:not(:first-child) {
+    background-color: #fcfcfc;
+}
+
+/* ==================================================
+   التجاوب مع شاشات الهواتف الذكية (Mobile Responsive)
+   ================================================== */
+@media (max-width: 600px) {
+    #compareModal > div {
+        padding: 15px 10px;
+        max-height: 95vh;
+        border-radius: 12px;
+    }
+
+    #compareModal h2 {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    /* تصغير صور وأسماء الهواتف في أعلى المقارنة */
+    #compareModal img {
+        height: 70px !important;
+    }
+
+    #compareModal h4 {
+        font-size: 0.85rem;
+        margin: 5px 0;
+    }
+
+    #compareModal p {
+        font-size: 0.8rem !important;
+    }
+
+    /* ضبط الجدول ليتناسب مع الشاشة الصغيرة دون خروج النص */
+    #compareModal td, #compareModal th {
+        padding: 8px 4px;
+        font-size: 0.78rem;
+    }
+
+    #compareModal td:first-child {
+        width: 30%;
+        font-size: 0.75rem;
+    }
+
+    #floatingCompareButton {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 18px;
+        font-size: 0.88rem;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
