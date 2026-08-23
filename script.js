@@ -1,61 +1,56 @@
+// ==================================================
+// 1. مصفوفة بيانات الهواتف
+// ==================================================
 const products = [
-
     {
         name: "Infinix NOTE 60 Pro",
         price: "27,000 جنيه",
         image: "Note-60-Pro.jpg",
-
         screen: "6.78 بوصة AMOLED، دقة 1.5K، معدل تحديث 144Hz، سطوع يصل إلى 4500 nits، حماية Gorilla Glass 7i",
         processor: "Qualcomm Snapdragon 7s Gen 4 5G",
-        ram: "12",
-        storage: "256",
+        ram: "12 GB",
+        storage: "256 GB",
         camera: "50MP OIS Night Master + 8MP Ultra-Wide بزاوية 112°",
-        frontCamera: "20",
+        frontCamera: "20 MP",
         battery: "6500mAh",
         os: "XOS 16"
     },
-    
     {
-        name: "Infinix NOTE 60 ",
+        name: "Infinix NOTE 60",
         price: "20,000 جنيه",
         image: "Note-60.jpg",
-
         screen: "6.78 بوصة AMOLED، دقة 1.5K، معدل تحديث 144Hz، سطوع يصل إلى 4500 nits، حماية Gorilla Glass 7i",
         processor: "D 7,400 5G",
-        ram: "8",
-        storage: "256",
-        camera: "50MP Night Master + 8MP Ultra-Wide  ",
-        frontCamera: "13",
+        ram: "8 GB",
+        storage: "256 GB",
+        camera: "50MP Night Master + 8MP Ultra-Wide",
+        frontCamera: "13 MP",
         battery: "6150mAh",
         os: "XOS 16"
     },
-        {
+    {
         name: "Infinix Hot 70",
-        price: " حسب النسخة يختلف السعر",
-        image: "Hot70.jpg",
-         image: "Infinix-Hot-70-Colors.jpg",
-
+        price: "حسب النسخة يختلف السعر",
+        image: "Infinix-Hot-70-Colors.jpg",
         screen: "6.78 بوصة بدقة 720x1576 بها ثقب",
-        processor: " ثماني النواة Helio G100 ULT تكنولوجيا 6 نانو",
-        ram: "8GB / 6GB /4 حسب الإصدار",
-        storage: "256 GB /128 GB ",
-        camera: " مزدوجة 50+2 م.ب",
-        frontCamera: "8MP",
+        processor: "ثماني النواة Helio G100 ULT تكنولوجيا 6 نانو",
+        ram: "8GB / 6GB / 4GB حسب الإصدار",
+        storage: "256GB / 128GB",
+        camera: "مزدوجة 50+2 م.ب",
+        frontCamera: "8 MP",
         battery: "5600mAh",
         os: "Android"
     },
-    
     {
-        name: "Samsung Galaxy 07",
-        price: " حسب النسخة يختلف السعر",
+        name: "Samsung Galaxy A07",
+        price: "حسب النسخة يختلف السعر",
         image: "A07.jpg",
-
         screen: "6.7 بوصة بدقة 720x1600 بها نوتش",
         processor: "معالج ثماني النواة Helio G99 تكنولوجيا 6 نانو",
-        ram: "8GB / 6GB /4 حسب الإصدار",
-        storage: "256GB /128 /64",
-        camera: " مزدوجة 50+2 م.ب",
-        frontCamera: "8MP",
+        ram: "8GB / 6GB / 4GB حسب الإصدار",
+        storage: "256GB / 128GB / 64GB",
+        camera: "مزدوجة 50+2 م.ب",
+        frontCamera: "8 MP",
         battery: "5000mAh",
         os: "Android"
     },
@@ -63,102 +58,90 @@ const products = [
         name: "Samsung Galaxy A57 5G",
         price: "30,000 جنيه",
         image: "A57.jpg",
-
         screen: "6.7 بوصة Super AMOLED Plus، دقة FHD+، معدل تحديث 120Hz",
         processor: "معالج ثماني النواة حتى 2.9GHz",
         ram: "8GB / 12GB حسب الإصدار",
-        storage: "256GB",
+        storage: "256 GB",
         camera: "50MP رئيسية + 12MP Ultra-Wide + 5MP، مع OIS",
-        frontCamera: "12MP",
+        frontCamera: "12 MP",
         battery: "5000mAh",
         os: "Android"
     },
     {
-        name: " Redmi A7",
+        name: "Redmi A7",
         price: "6,200 جنيه",
         image: "Redmi-A7.jpg",
-
         screen: "6.88 بوصة بدقة 720x1640 بكسل بها نوتش",
         processor: "Unisoc T7250 تكنولوجيا 12 نانو",
-        ram: "3GB ",
-        storage: "64GB",
+        ram: "3 GB",
+        storage: "64 GB",
         camera: "13 MP",
-        frontCamera: "8MP",
+        frontCamera: "8 MP",
         battery: "5200mAh",
         os: "Android"
     },
-
     {
         name: "Redmi Note 15 5G",
         price: "15,000 جنيه",
         image: "Note-15.jpg",
-
         screen: "6.77 بوصة AMOLED، دقة 2392×1080، معدل تحديث 120Hz، سطوع يصل إلى 3200 nits",
         processor: "Qualcomm Snapdragon 6 Gen 3، تصنيع 4nm، ثماني النواة حتى 2.4GHz",
         ram: "6GB / 8GB / 12GB حسب الإصدار",
         storage: "128GB / 256GB / 512GB حسب الإصدار",
         camera: "108MP رئيسية + 8MP Ultra-Wide",
-        frontCamera: "20MP",
+        frontCamera: "20 MP",
         battery: "5520mAh",
         os: "Xiaomi HyperOS 2"
     },
-    
-   {
+    {
         name: "Oppo Reno 16",
-        price: " 40000",
+        price: "40,000 جنيه",
         image: "oppo-reno16.purpel.jpg",
-
         screen: "6.78 بوصة بدقة 720x1576 بها ثقب",
-        processor: " Qualcomm Snapdragon 7 Gen 4 ثماني النواة 4 نانو ",
-        ram: "12GB",
-        storage: "256GB ",
-        camera: " (Ultra-wide): 50 MP +(Wide): 50 MP + (Telephoto): 50 MP ",
+        processor: "Qualcomm Snapdragon 7 Gen 4 ثماني النواة 4 نانو",
+        ram: "12 GB",
+        storage: "256 GB",
+        camera: "(Ultra-wide): 50 MP +(Wide): 50 MP + (Telephoto): 50 MP",
         frontCamera: "50 MP",
         battery: "6700mAh",
         os: "Android"
     },
-    
     {
         name: "Oppo Reno 16 Pro",
-        price: " 58000 L.E",
+        price: "58,000 جنيه",
         image: "oppo_reno_16.png",
         screen: "6.32 بوصة بدقة 1216x2640 بكسل بها ثقب",
         processor: "ثماني النواة Dimn 8550 Super تكنولوجيا 4 نانو",
         ram: "12 GB",
-        storage: "512 GB ",
-        camera: " خلفية ثلاثية  MB 200+50MB+50MB",
-        frontCamera: "50MP",
+        storage: "512 GB",
+        camera: "خلفية ثلاثية 200MB+50MB+50MB",
+        frontCamera: "50 MP",
         battery: "6700mAh",
         os: "Android"
     },
-
     {
         name: "Samsung Galaxy S26 Ultra",
         price: "75,000 جنيه",
         image: "26Ultra.jpg",
-
         screen: "6.9 بوصة Dynamic AMOLED 2X، شاشة عالية الدقة ومعدل تحديث متكيف",
         processor: "معالج Snapdragon مخصص لسلسلة Galaxy حسب السوق",
         ram: "12GB / 16GB حسب الإصدار",
         storage: "256GB / 512GB / 1TB",
         camera: "200MP رئيسية + 50MP Ultra-Wide + عدسات Telephoto",
-        frontCamera: "12MP",
+        frontCamera: "12 MP",
         battery: "5000mAh",
         os: "Android"
-    }
-
     },
     {
         name: "Honor 600",
         price: "24,000 جنيه",
         image: "honor-600.jpg",
-
         screen: "6.7 بوصة OLED، دقة 1.5K، معدل تحديث 120Hz، سطوع يصل إلى 5000 nits، تعتيم PWM 3840Hz",
         processor: "Qualcomm Snapdragon 7 Gen 4 (4nm)",
         ram: "12GB / 16GB",
         storage: "256GB / 512GB",
         camera: "200MP OIS رئيسية + 12MP Ultra-Wide",
-        frontCamera: "50MP",
+        frontCamera: "50 MP",
         battery: "6500mAh (سيليكون كربون) - شحن سريع 80W",
         os: "MagicOS 10 (Android 16)"
     },
@@ -166,13 +149,12 @@ const products = [
         name: "Honor 600 Pro",
         price: "36,000 جنيه",
         image: "honor-600-pro.jpg",
-
         screen: "6.78 بوصة AMOLED، دقة 1.5K، معدل تحديث 120Hz، سطوع استثنائي 8000 nits، حماية للعين",
         processor: "Qualcomm Snapdragon 8 Elite (3nm)",
         ram: "12GB / 16GB",
         storage: "256GB / 512GB / 1TB",
         camera: "200MP OIS + 50MP Telephoto (3.5x Zoom) + 12MP Ultra-Wide",
-        frontCamera: "50MP",
+        frontCamera: "50 MP",
         battery: "7000mAh - شحن سلكي 80W + لاسلكي 50W (IP68/IP69K)",
         os: "MagicOS 10 (Android 16)"
     },
@@ -180,10 +162,9 @@ const products = [
         name: "Vivo V60 Pro",
         price: "29,500 جنيه",
         image: "vivo-v60-pro.jpg",
-
         screen: "6.78 بوصة AMOLED منحنية، دقة 1.5K، 120Hz، سطوع 4500 nits",
         processor: "MediaTek Dimensity 8350 (4nm)",
-        ram: "12GB",
+        ram: "12 GB",
         storage: "256GB / 512GB",
         camera: "50MP ZEISS OIS + 50MP Telephoto (3x Zoom) + 50MP Ultra-Wide",
         frontCamera: "50MP ZEISS AF",
@@ -194,994 +175,254 @@ const products = [
         name: "Tecno Camon 40 Pro 5G",
         price: "18,500 جنيه",
         image: "tecno-camon-40-pro.jpg",
-
         screen: "6.78 بوصة AMOLED، دقة FHD+، معدل تحديث 144Hz",
         processor: "MediaTek Dimensity 7300 5G",
         ram: "8GB / 12GB",
-        storage: "256GB",
+        storage: "256 GB",
         camera: "50MP Sony IMX890 OIS + 50MP Ultra-Wide",
         frontCamera: "50MP مع فلاش مزدوج",
         battery: "5500mAh - شحن سريع 70W",
         os: "HiOS 16"
+    }
 ];
 
+const storePhoneNumber = "201003211801";
 
-// ==============================
-// عرض المنتجات
-// ==============================
-
-const container = document.getElementById("productsContainer");
-
+// ==================================================
+// 2. دالة عرض المنتجات في الصفحة
+// ==================================================
 function displayProducts(list) {
-
-    if (!container) {
-        console.error("لم يتم العثور على productsContainer");
-        return;
-    }
+    const container = document.getElementById("products-container") || document.getElementById("productsContainer");
+    if (!container) return;
 
     container.innerHTML = "";
 
     if (list.length === 0) {
-
-        container.innerHTML = `
-            <div style="
-                width:100%;
-                text-align:center;
-                padding:40px;
-                font-size:20px;
-            ">
-                لا يوجد موبايل بهذا الاسم
-            </div>
-        `;
-
+        container.innerHTML = `<div style="grid-column: 1/-1; text-align:center; padding:40px; font-size:20px; color:#666;">لا يوجد موبايل بهذا الاسم</div>`;
         return;
     }
 
     list.forEach((product) => {
-
         const index = products.indexOf(product);
-
         const card = document.createElement("div");
-
         card.className = "product-card";
 
+        const waMessage = encodeURIComponent(`مرحباً Wazery Mobile، استفسار عن هاتف: ${product.name} بسعر ${product.price}`);
+        const waLink = `https://wa.me/${storePhoneNumber}?text=${waMessage}`;
+
         card.innerHTML = `
-
-            <img
-                src="${product.image}"
-                alt="${product.name}"
-                onerror="this.style.display='none'"
-            >
-
-            <div class="product-info">
-
+            <img src="${product.image}" alt="${product.name}" onerror="this.src='https://via.placeholder.com/300?text=${encodeURIComponent(product.name)}'">
+            <div class="product-info" style="padding: 10px;">
                 <h3>${product.name}</h3>
-
-                <div class="price">
-                    ${product.price}
+                <div class="price" style="font-weight:bold; color:#c68b59; margin: 8px 0;">${product.price}</div>
+                <div style="display:flex; gap:5px; flex-wrap:wrap; justify-content:center;">
+                    <button class="details-btn" onclick="showDetails(${index})" style="padding: 6px 12px; cursor:pointer;"><i class="fas fa-eye"></i> المواصفات</button>
+                    <button class="compare-btn" onclick="addToCompare(${index})" style="padding: 6px 12px; cursor:pointer;">⚖️ مقارنة</button>
+                    <a href="${waLink}" target="_blank" style="padding: 6px 12px; background:#25d366; color:#fff; text-decoration:none; border-radius:5px; display:inline-block;"><i class="fab fa-whatsapp"></i> طلب</a>
                 </div>
-
-                <button
-                    class="details-btn"
-                    onclick="showDetails(${index})"
-                >
-                    عرض المواصفات
-                </button>
-
-                <button
-                    class="compare-btn"
-                    onclick="addToCompare(${index})"
-                >
-                    ⚖️ قارن
-                </button>
-
             </div>
-
         `;
-
         container.appendChild(card);
-
     });
-
 }
 
-
-// ==============================
-// عرض تفاصيل الموبايل
-// ==============================
-
+// ==================================================
+// 3. عرض تفاصيل الموبايل (Modal)
+// ==================================================
 function showDetails(index) {
-
     const product = products[index];
+    if (!product) return;
 
-    if (!product) {
-        return;
-    }
-
-
-    const modalImage = document.getElementById("modalImage");
-    const modalName = document.getElementById("modalName");
+    const modalImg = document.getElementById("modalImg") || document.getElementById("modalImage");
+    const modalTitle = document.getElementById("modalTitle") || document.getElementById("modalName");
     const modalPrice = document.getElementById("modalPrice");
-    const modalScreen = document.getElementById("modalScreen");
-    const modalProcessor = document.getElementById("modalProcessor");
-    const modalRam = document.getElementById("modalRam");
-    const modalStorage = document.getElementById("modalStorage");
-    const modalCamera = document.getElementById("modalCamera");
-    const modalFrontCamera = document.getElementById("modalFrontCamera");
-    const modalBattery = document.getElementById("modalBattery");
-    const modalOS = document.getElementById("modalOS");
-    const productModal = document.getElementById("productModal");
+    const specScreen = document.getElementById("specScreen") || document.getElementById("modalScreen");
+    const specCpu = document.getElementById("specCpu") || document.getElementById("modalProcessor");
+    const specRam = document.getElementById("specRam") || document.getElementById("modalRam");
+    const specStorage = document.getElementById("specStorage") || document.getElementById("modalStorage");
+    const specMainCam = document.getElementById("specMainCam") || document.getElementById("modalCamera");
+    const specSelfieCam = document.getElementById("specSelfieCam") || document.getElementById("modalFrontCamera");
+    const specBattery = document.getElementById("specBattery") || document.getElementById("modalBattery");
+    const specOs = document.getElementById("specOs") || document.getElementById("modalOS");
+    
+    if (modalImg) modalImg.src = product.image;
+    if (modalTitle) modalTitle.textContent = product.name;
+    if (modalPrice) modalPrice.textContent = product.price;
+    if (specScreen) specScreen.textContent = product.screen;
+    if (specCpu) specCpu.textContent = product.processor;
+    if (specRam) specRam.textContent = product.ram;
+    if (specStorage) specStorage.textContent = product.storage;
+    if (specMainCam) specMainCam.textContent = product.camera;
+    if (specSelfieCam) specSelfieCam.textContent = product.frontCamera;
+    if (specBattery) specBattery.textContent = product.battery;
+    if (specOs) specOs.textContent = product.os;
 
-
-    if (modalImage) {
-        modalImage.src = product.image;
+    const modalWaBtn = document.getElementById("modalWaBtn");
+    if (modalWaBtn) {
+        const waMessage = encodeURIComponent(`مرحباً Wazery Mobile، أرغب في طلب هاتف ${product.name}`);
+        modalWaBtn.href = `https://wa.me/${storePhoneNumber}?text=${waMessage}`;
     }
 
-    if (modalName) {
-        modalName.textContent = product.name;
-    }
-
-    if (modalPrice) {
-        modalPrice.textContent = product.price;
-    }
-
-    if (modalScreen) {
-        modalScreen.textContent = product.screen;
-    }
-
-    if (modalProcessor) {
-        modalProcessor.textContent = product.processor;
-    }
-
-    if (modalRam) {
-        modalRam.textContent = product.ram;
-    }
-
-    if (modalStorage) {
-        modalStorage.textContent = product.storage;
-    }
-
-    if (modalCamera) {
-        modalCamera.textContent = product.camera;
-    }
-
-    if (modalFrontCamera) {
-        modalFrontCamera.textContent = product.frontCamera;
-    }
-
-    if (modalBattery) {
-        modalBattery.textContent = product.battery;
-    }
-
-    if (modalOS) {
-        modalOS.textContent = product.os;
-    }
-
-
-    if (productModal) {
-        productModal.style.display = "block";
-    }
-
+    const modal = document.getElementById("productModal");
+    if (modal) modal.style.display = "flex";
 }
-
-
-// ==============================
-// إغلاق نافذة المواصفات
-// ==============================
 
 function closeModal() {
-
     const modal = document.getElementById("productModal");
-
-    if (modal) {
-        modal.style.display = "none";
-    }
-
+    if (modal) modal.style.display = "none";
 }
-
-
-// ==============================
-// إغلاق النافذة عند الضغط خارجها
-// ==============================
 
 window.addEventListener("click", function(event) {
-
     const modal = document.getElementById("productModal");
-
     if (modal && event.target === modal) {
-
         modal.style.display = "none";
-
     }
-
 });
 
-
-// ==============================
-// البحث عن الموبايلات
-// ==============================
-
+// ==================================================
+// 4. البحث المباشر
+// ==================================================
 function searchProducts() {
-
     const input = document.getElementById("searchInput");
+    if (!input) return;
 
-    if (!input) {
-        displayProducts(products);
-        return;
-    }
-
-
-    const searchText = input.value
-        .toLowerCase()
-        .trim();
-
-
+    const searchText = input.value.toLowerCase().trim();
     if (searchText === "") {
-
         displayProducts(products);
-
         return;
     }
-
 
     const filteredProducts = products.filter(product =>
-
-        product.name
-            .toLowerCase()
-            .includes(searchText)
-
+        product.name.toLowerCase().includes(searchText)
     );
 
-
     displayProducts(filteredProducts);
-
 }
 
-displayProducts(products);
 // ==================================================
-// نظام مقارنة الموبايلات
+// 5. نظام مقارنة الهواتف
 // ==================================================
-
 let compareList = [];
 
-
-// --------------------------------------------------
-// إضافة موبايل للمقارنة
-// --------------------------------------------------
-
 function addToCompare(index) {
-
     const product = products[index];
+    if (!product) return;
 
-    if (!product) {
-        return;
-    }
-
-    // لو الموبايل موجود بالفعل
     if (compareList.includes(index)) {
-
         alert("الموبايل ده موجود بالفعل في المقارنة");
-
         return;
     }
-    // أقصى عدد موبايلين
+
     if (compareList.length >= 2) {
-        // تفريغ القائمة القديمة
         compareList = []; 
     }
 
-    // إضافة الموبايل الحالي في كل الأحوال طالما لم يكن موجوداً من قبل
     compareList.push(index);
     updateCompareButton();
 
-    // التحقق من عرض المقارنة أو إظهار رسالة التنبيه
     if (compareList.length === 2) {
         showCompare();
     } else {
         alert("تم إضافة " + product.name + ".\nاختار موبايل تاني للمقارنة");
     }
-    
-
 }
 
-
-// --------------------------------------------------
-// حذف موبايل من المقارنة
-// --------------------------------------------------
-
 function removeFromCompare(index) {
-
-    compareList = compareList.filter((item, i) => i !== index);
-
+    compareList = compareList.filter(item => item !== index);
     updateCompareButton();
 
     if (compareList.length < 2) {
-
-        const modal = document.getElementById("compareModal");
-
-        if (modal) {
-            modal.remove();
-        }
-
+        closeCompare();
     } else {
-
         showCompare();
-
     }
-
 }
 
-
-// --------------------------------------------------
-// زر المقارنة
-// --------------------------------------------------
-
 function updateCompareButton() {
-
     let button = document.getElementById("floatingCompareButton");
-
     if (!button) {
-
         button = document.createElement("button");
-
         button.id = "floatingCompareButton";
-
+        button.style.cssText = "position:fixed; bottom:20px; right:20px; background:#1e3c72; color:#fff; border:none; padding:12px 20px; border-radius:30px; font-weight:bold; cursor:pointer; z-index:999; box-shadow:0 4px 10px rgba(0,0,0,0.3);";
         document.body.appendChild(button);
-
     }
 
     if (compareList.length === 0) {
-
         button.style.display = "none";
-
         return;
-
     }
 
     button.style.display = "block";
-
-    button.innerHTML =
-        "⚖️ مقارنة (" +
-        compareList.length +
-        "/2)";
-
+    button.innerHTML = `⚖️ مقارنة (${compareList.length}/2)`;
 }
 
-
-// --------------------------------------------------
-// عرض المقارنة
-// --------------------------------------------------
-
 function showCompare() {
-
-    if (compareList.length !== 2) {
-
-        return;
-
-    }
+    if (compareList.length !== 2) return;
 
     const phone1 = products[compareList[0]];
     const phone2 = products[compareList[1]];
+    if (!phone1 || !phone2) return;
 
-    if (!phone1 || !phone2) {
-
-        return;
-
-    }
-
-    // حذف نافذة قديمة
     const oldModal = document.getElementById("compareModal");
-
-    if (oldModal) {
-
-        oldModal.remove();
-
-    }
-
+    if (oldModal) oldModal.remove();
 
     const modal = document.createElement("div");
-
     modal.id = "compareModal";
+    modal.style.cssText = "position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1000; display:flex; justify-content:center; align-items:center;";
 
     modal.innerHTML = `
-
-        <div class="compare-overlay">
-
-            <div class="compare-box">
-
-                <button
-                    class="compare-close"
-                    onclick="closeCompare()"
-                >
-                    ×
-                </button>
-
-                <h2>
-                    ⚖️ مقارنة الموبايلات
-                </h2>
-
-                <div class="compare-products">
-
-                    <div class="compare-phone">
-
-                        <img
-                            src="${phone1.image}"
-                            alt="${phone1.name}"
-                        >
-
-                        <h3>
-                            ${phone1.name}
-                        </h3>
-
-                        <div class="compare-price">
-                            ${phone1.price}
-                        </div>
-
-                        <button
-                            class="remove-compare"
-                            onclick="removeFromCompare(${compareList[0]})"
-                        >
-                            إزالة
-                        </button>
-
-                    </div>
-
-
-                    <div class="compare-vs">
-                        VS
-                    </div>
-
-
-                    <div class="compare-phone">
-
-                        <img
-                            src="${phone2.image}"
-                            alt="${phone2.name}"
-                        >
-
-                        <h3>
-                            ${phone2.name}
-                        </h3>
-
-                        <div class="compare-price">
-                            ${phone2.price}
-                        </div>
-
-                        <button
-                            class="remove-compare"
-                            onclick="removeFromCompare(${compareList[1]})"
-                        >
-                            إزالة
-                        </button>
-
-                    </div>
-
+        <div style="background:#fff; width:90%; max-width:700px; max-height:90vh; overflow-y:auto; border-radius:12px; padding:20px; position:relative;">
+            <button onclick="closeCompare()" style="position:absolute; top:10px; left:15px; font-size:24px; border:none; background:none; cursor:pointer;">×</button>
+            <h2 style="text-align:center; color:#1e3c72; margin-bottom:15px;">⚖️ مقارنة الموبايلات</h2>
+            
+            <div style="display:flex; justify-content:space-around; text-align:center; margin-bottom:20px;">
+                <div>
+                    <img src="${phone1.image}" style="height:100px; object-fit:contain;" onerror="this.src='https://via.placeholder.com/100'">
+                    <h4>${phone1.name}</h4>
+                    <p style="color:#c68b59;">${phone1.price}</p>
                 </div>
-
-
-                <div class="comparison-table">
-
-                    ${createComparisonRow(
-                        "💰 السعر",
-                        phone1.price,
-                        phone2.price
-                    )}
-
-                    ${createComparisonRow(
-                        "📱 الشاشة",
-                        phone1.screen,
-                        phone2.screen
-                    )}
-
-                    ${createComparisonRow(
-                        "⚡ المعالج",
-                        phone1.processor,
-                        phone2.processor
-                    )}
-
-                    ${createComparisonRow(
-                        "🧠 الرام",
-                        phone1.ram + " GB",
-                        phone2.ram + " GB"
-                    )}
-
-                    ${createComparisonRow(
-                        "💾 التخزين",
-                        phone1.storage + " GB",
-                        phone2.storage + " GB"
-                    )}
-
-                    ${createComparisonRow(
-                        "📷 الكاميرا الخلفية",
-                        phone1.camera,
-                        phone2.camera
-                    )}
-
-                    ${createComparisonRow(
-                        "🤳 الكاميرا الأمامية",
-                        phone1.frontCamera + " MP",
-                        phone2.frontCamera + " MP"
-                    )}
-
-                    ${createComparisonRow(
-                        "🔋 البطارية",
-                        phone1.battery,
-                        phone2.battery
-                    )}
-
-                    ${createComparisonRow(
-                        "🤖 نظام التشغيل",
-                        phone1.os,
-                        phone2.os
-                    )}
-
+                <div style="font-size:24px; font-weight:bold; align-self:center;">VS</div>
+                <div>
+                    <img src="${phone2.image}" style="height:100px; object-fit:contain;" onerror="this.src='https://via.placeholder.com/100'">
+                    <h4>${phone2.name}</h4>
+                    <p style="color:#c68b59;">${phone2.price}</p>
                 </div>
-
             </div>
 
+            <table style="width:100%; border-collapse:collapse; text-align:center;" border="1">
+                <tr><th>المواصفة</th><th>${phone1.name}</th><th>${phone2.name}</th></tr>
+                <tr><td>💰 السعر</td><td>${phone1.price}</td><td>${phone2.price}</td></tr>
+                <tr><td>📱 الشاشة</td><td>${phone1.screen}</td><td>${phone2.screen}</td></tr>
+                <tr><td>⚡ المعالج</td><td>${phone1.processor}</td><td>${phone2.processor}</td></tr>
+                <tr><td>🧠 الرام</td><td>${phone1.ram}</td><td>${phone2.ram}</td></tr>
+                <tr><td>💾 التخزين</td><td>${phone1.storage}</td><td>${phone2.storage}</td></tr>
+                <tr><td>📷 الكاميرا الخلفية</td><td>${phone1.camera}</td><td>${phone2.camera}</td></tr>
+                <tr><td>🤳 الكاميرا الأمامية</td><td>${phone1.frontCamera}</td><td>${phone2.frontCamera}</td></tr>
+                <tr><td>🔋 البطارية</td><td>${phone1.battery}</td><td>${phone2.battery}</td></tr>
+                <tr><td>🤖 نظام التشغيل</td><td>${phone1.os}</td><td>${phone2.os}</td></tr>
+            </table>
         </div>
-
     `;
 
     document.body.appendChild(modal);
-
 }
-
-
-// --------------------------------------------------
-// إنشاء صف من جدول المقارنة
-// --------------------------------------------------
-
-function createComparisonRow(title, value1, value2) {
-
-    return `
-
-        <div class="comparison-row">
-
-            <div class="comparison-title">
-                ${title}
-            </div>
-
-            <div class="comparison-value">
-                ${value1 || "-"}
-            </div>
-
-            <div class="comparison-value">
-                ${value2 || "-"}
-            </div>
-
-        </div>
-
-    `;
-
-}
-
-
-// --------------------------------------------------
-// إغلاق المقارنة
-// --------------------------------------------------
 
 function closeCompare() {
-
     const modal = document.getElementById("compareModal");
-
-    if (modal) {
-        modal.remove();
-    }
-
-    // مسح الموبايلات المختارة للمقارنة
+    if (modal) modal.remove();
     compareList = [];
-
-    // إخفاء زر المقارنة العائم
     updateCompareButton();
-
 }
-
-function startNewComparison() {
-
-    compareList = [];
-
-    const modal = document.getElementById("compareModal");
-
-    if (modal) {
-        modal.remove();
-    }
-
-    updateCompareButton();
-
-}
-
-
-// --------------------------------------------------
-// زر المقارنة العائم
-// --------------------------------------------------
 
 document.addEventListener("click", function(event) {
-
-    if (event.target.id === "floatingCompareButton") {
-
-        if (compareList.length === 2) {
-
-            showCompare();
-
-        }
-
+    if (event.target.id === "floatingCompareButton" && compareList.length === 2) {
+        showCompare();
     }
-
 });
 
-
 // ==================================================
-// CSS الخاص بالمقارنة
+// 6. تشغيل الكود فور التحميل
 // ==================================================
-
-const compareStyle = document.createElement("style");
-
-compareStyle.textContent = `
-
-    .compare-btn {
-
-        width: 100%;
-
-        margin-top: 10px;
-
-        padding: 10px;
-
-        border: none;
-
-        border-radius: 8px;
-
-        background: #222;
-
-        color: white;
-
-        font-size: 15px;
-
-        cursor: pointer;
-
-        transition: 0.2s;
-
-    }
-
-
-    .compare-btn:hover {
-
-        transform: translateY(-2px);
-
-        opacity: 0.9;
-
-    }
-
-
-    #floatingCompareButton {
-
-        position: fixed;
-
-        bottom: 20px;
-
-        right: 20px;
-
-        z-index: 9998;
-
-        border: none;
-
-        border-radius: 50px;
-
-        padding: 15px 22px;
-
-        background: #111;
-
-        color: white;
-
-        font-size: 16px;
-
-        font-weight: bold;
-
-        cursor: pointer;
-
-        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-
-        display: none;
-
-    }
-
-
-    .compare-overlay {
-
-        position: fixed;
-
-        inset: 0;
-
-        background: rgba(0,0,0,0.75);
-
-        z-index: 9999;
-
-        display: flex;
-
-        justify-content: center;
-
-        align-items: center;
-
-        padding: 15px;
-
-        overflow-y: auto;
-
-    }
-
-
-    .compare-box {
-
-        position: relative;
-
-        width: 100%;
-
-        max-width: 1000px;
-
-        max-height: 90vh;
-
-        overflow-y: auto;
-
-        background: white;
-
-        border-radius: 18px;
-
-        padding: 25px;
-
-        box-sizing: border-box;
-
-    }
-
-
-    .compare-box h2 {
-
-        text-align: center;
-
-        margin-top: 5px;
-
-        margin-bottom: 25px;
-
-    }
-
-
-    .compare-close {
-
-        position: absolute;
-
-        top: 10px;
-
-        right: 15px;
-
-        width: 40px;
-
-        height: 40px;
-
-        border: none;
-
-        border-radius: 50%;
-
-        background: #eee;
-
-        font-size: 28px;
-
-        cursor: pointer;
-
-    }
-
-
-    .compare-products {
-
-        display: grid;
-
-        grid-template-columns: 1fr 80px 1fr;
-
-        align-items: center;
-
-        gap: 15px;
-
-        margin-bottom: 25px;
-
-    }
-
-
-    .compare-phone {
-
-        text-align: center;
-
-        padding: 15px;
-
-        border-radius: 15px;
-
-        background: #f5f5f5;
-
-    }
-
-
-    .compare-phone img {
-
-        width: 150px;
-
-        height: 180px;
-
-        object-fit: contain;
-
-        max-width: 100%;
-
-    }
-
-
-    .compare-phone h3 {
-
-        margin: 10px 0;
-
-    }
-
-
-    .compare-price {
-
-        font-weight: bold;
-
-        font-size: 18px;
-
-        margin-bottom: 10px;
-
-    }
-
-
-    .compare-vs {
-
-        text-align: center;
-
-        font-size: 22px;
-
-        font-weight: bold;
-
-    }
-
-
-    .remove-compare {
-
-        border: none;
-
-        background: #d33;
-
-        color: white;
-
-        padding: 8px 15px;
-
-        border-radius: 7px;
-
-        cursor: pointer;
-
-    }
-
-
-    .comparison-table {
-
-        width: 100%;
-
-        border-radius: 12px;
-
-        overflow: hidden;
-
-    }
-
-
-    .comparison-row {
-
-        display: grid;
-
-        grid-template-columns: 180px 1fr 1fr;
-
-        border-bottom: 1px solid #ddd;
-
-    }
-
-
-    .comparison-title {
-
-        font-weight: bold;
-
-        padding: 15px;
-
-        background: #f1f1f1;
-
-    }
-
-
-    .comparison-value {
-
-        padding: 15px;
-
-        line-height: 1.6;
-
-        border-right: 1px solid #ddd;
-
-    }
-
-
-    @media (max-width: 700px) {
-
-        .compare-box {
-
-            padding: 15px;
-
-        }
-
-
-        .compare-products {
-
-            grid-template-columns: 1fr 45px 1fr;
-
-            gap: 5px;
-
-        }
-
-
-        .compare-phone {
-
-            padding: 8px;
-
-        }
-
-
-        .compare-phone img {
-
-            width: 100px;
-
-            height: 130px;
-
-        }
-
-
-        .compare-phone h3 {
-
-            font-size: 14px;
-
-        }
-
-
-        .compare-vs {
-
-            font-size: 16px;
-
-        }
-
-
-        .comparison-row {
-
-            grid-template-columns: 100px 1fr 1fr;
-
-        }
-
-
-        .comparison-title,
-        .comparison-value {
-
-            padding: 9px;
-
-            font-size: 12px;
-
-        }
-
-
-        #floatingCompareButton {
-
-            bottom: 15px;
-
-            right: 15px;
-
-            padding: 12px 17px;
-
-            font-size: 14px;
-
-        }
-
-    }
-
-`;
-
-document.head.appendChild(compareStyle);
-
-
-// تشغيل زر المقارنة
-updateCompareButton();
+document.addEventListener("DOMContentLoaded", () => {
+    displayProducts(products);
+});
