@@ -248,8 +248,7 @@ const products = [
         frontCamera: "32 MP",
         battery: "5100mAh - شحن خارق 120W",
         os: "Xiaomi HyperOS 2"
-    }
-    
+    },
     {
         name: "Vivo V60 Pro",
         price: "29,500 جنيه",
