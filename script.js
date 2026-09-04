@@ -287,7 +287,60 @@ const products = [
         frontCamera: "50MP مع فلاش مزدوج",
         battery: "5500mAh - شحن سريع 70W",
         os: "HiOS 16"
-    }
+    },
+    const xiaomiPhones = [
+    {
+        name: "Xiaomi 17 Ultra",
+        price: "سيتم تحديده فور التوفر رسمياً",
+        image: "Xiaomi-17-Ultra.jpg",
+        screen: "6.9 بوصة، دقة 1200x2608 بكسل بها ثقب",
+        processor: "Qualcomm Snapdragon 8 Elite Gen 5 (3 نانو)",
+        ram: "16 GB",
+        storage: "512 GB",
+        camera: "ثلاثية 50MP + 200MP + 50MP",
+        frontCamera: "50 MP",
+        battery: "6000mAh",
+        os: "Android 16"
+    },
+    {
+        name: "Xiaomi 17T Pro",
+        price: "سيتم تحديده فور التوفر رسمياً",
+        image: "Xiaomi-17T-Pro.jpg",
+        screen: "6.83 بوصة، دقة 1280x2772 بكسل بها ثقب",
+        processor: "MediaTek Dimensity 9500 (3 نانو)",
+        ram: "12 GB",
+        storage: "512 GB",
+        camera: "ثلاثية 50MP + 50MP + 12MP",
+        frontCamera: "32 MP",
+        battery: "7000mAh",
+        os: "Android 16"
+    },
+    {
+        name: "Xiaomi 17T",
+        price: "سيتم تحديده فور التوفر رسمياً",
+        image: "Xiaomi-17T.jpg",
+        screen: "6.59 بوصة، دقة 1268x2756 بكسل بها ثقب",
+        processor: "MediaTek Dimensity 8500 Ultra (4 نانو)",
+        ram: "12 GB",
+        storage: "256 GB / 512 GB",
+        camera: "ثلاثية 50MP + 50MP + 12MP",
+        frontCamera: "32 MP",
+        battery: "6500mAh",
+        os: "Android 16"
+    },
+    {
+        name: "Xiaomi Redmi 17 5G",
+        price: "250 دولار عالمياً (حوالي 12,300 جنيه)",
+        image: "Redmi-17-5G.jpg",
+        screen: "6.9 بوصة IPS LCD، دقة 720x1600، معدل تحديث 120Hz، حماية Gorilla Glass 7i",
+        processor: "Qualcomm Snapdragon 4 Gen 5 (4 نانو)",
+        ram: "4 GB / 6 GB",
+        storage: "128 GB / 256 GB",
+        camera: "50 MP رئيسية مع فلاش LED",
+        frontCamera: "8 MP",
+        battery: "7500mAh مع شحن سريع 45 واط",
+        os: "Android 16 مع واجهة HyperOS 3"
+    },
 ];
 
 const storePhoneNumber = "201003211801";
