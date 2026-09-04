@@ -16,6 +16,19 @@ const products = [
         os: "XOS 16"
     },
     {
+        name: "Vivo Y500",
+        price: "18,000 جنيه (نسخة 6GB) / 20,000 جنيه (نسخة 8GB)",
+        image: "Vivo-Y500.jpg",
+        screen: "6.83 بوصة AMOLED، دقة 1.5K (1260x2800)، معدل تحديث 120Hz، سطوع يصل إلى 5000 nits",
+        processor: "Unisoc T7300 (تكنولوجيا 6 نانو)",
+        ram: "6 GB / 8 GB",
+        storage: "256 GB",
+        camera: "50MP رئيسية (بمستشعر Sony IMX852) + 2MP ماكرو",
+        frontCamera: "32 MP",
+        battery: "8100mAh مع شحن سريع 44 واط",
+        os: "Android 16 مع واجهة OriginOS 6"
+    },
+    {
         name: "Infinix NOTE 60",
         price: "20,000 جنيه",
         image: "Note-60.jpg",
