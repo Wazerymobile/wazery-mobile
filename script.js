@@ -288,7 +288,7 @@ const products = [
         battery: "5500mAh - شحن سريع 70W",
         os: "HiOS 16"
     },
-    const xiaomiPhones = [
+  
     {
         name: "Xiaomi 17 Ultra",
         price: "سيتم تحديده فور التوفر رسمياً",
